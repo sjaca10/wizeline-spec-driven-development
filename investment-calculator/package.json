@@ -1,0 +1,29 @@
+{
+  "name": "investment-calculator",
+  "version": "1.0.0",
+  "description": "Compound Interest Investment Calculator",
+  "keywords": [
+    "compound",
+    "interest",
+    "investment",
+    "calculator",
+    "spec",
+    "driven",
+    "development",
+    "course"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sjaca10/wizeline-spec-driven-development/investment-calculator"
+  },
+  "license": "ISC",
+  "author": "Javier Aguila",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@fission-ai/openspec": "^1.12.0"
+  }
+}
