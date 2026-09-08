@@ -1,23 +1,24 @@
 schema: spec-driven
 
-# Project context (optional)
-# This is shown to AI when creating artifacts.
-# Add your tech stack, conventions, style guides, domain knowledge, etc.
-# Example:
-#   context: |
-#     Tech stack: TypeScript, React, Node.js
-#     We use conventional commits
-#     Domain: e-commerce platform
+# Project context - injected into EVERY
+# AI planning request automatically
+context: |
+  Plain web app. HTML5 + CSS3 + JS ES2022.
+  No frameworks, no build tools.
+  Files: index.html, style.css, app.js.
+  No external libraries (no jQuery, lodash).
+  Inputs validate before calculating.
+  Results formatted to 2 decimal places.
+  Mobile-responsive (min-width: 320px).
+  Colors #1a1a2e (bg) #e94560 (accent).
+  Forbidden: var, inline, styles, alert()
 
-# Per-artifact rules (optional)
-# Add custom rules for specific artifacts.
-# Example:
-#   rules:
-#     proposal:
-#       - Keep proposals under 500 words
-#       - Always include a "Non-goals" section
-#     tasks:
-#       - Break tasks into chunks of max 2 hours
+# Per-artifact rules
+rules:
+  specs:
+    - Use Given/When/Then for all scenarios
+  tasks:
+    - Break into 15-60 min chunks max
 
 # Per-operation guidance (optional)
 # Add advisory guidance for how apply and archive work should be conducted.
